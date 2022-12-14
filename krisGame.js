@@ -1,12 +1,12 @@
 window.addEventListener("load" , function(){
-    let countUser = document.querySelector(".countUser"),
+    let countUser = document.querySelector(".count-User"),
     countComp = document.querySelector(".count-comp"),
     userField = document.querySelector(".user-field"),
     compField = document.querySelector (".comp-field")
     res = document.querySelector(".result"),
     play = document.querySelector(".play"),
     fields = document.querySelectorAll(".field")
-    userStep, compStep, countU = 0, countC = 0, blocked = false;
+    userStep = 0, compStep = 0, countU = 0, countC = 0, blocked = false;
 
     function choiceUser(e){
         if (blocked) return
@@ -27,7 +27,7 @@ window.addEventListener("load" , function(){
         let compFields = compField.querySelectorAll(".field");
 
         setTimeout(()=>{
-            compField.classList.remove("blinkl");
+            compField.classList.remove("blink");
             compStep = compFields[rand].dataset.field
             compFields[rand].classList.add("active")
             winner()
@@ -39,6 +39,7 @@ window.addEventListener("load" , function(){
         blocked = false
 
         let comb = userStep + compStep
+        //console.log(comb)
 
 
         switch (comb){
