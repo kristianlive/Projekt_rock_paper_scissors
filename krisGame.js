@@ -1,5 +1,5 @@
 window.addEventListener("load" , function(){
-    let countUser = document.querySelector(".count-User"),
+    let countUser = document.querySelector(".count-user"),
     countComp = document.querySelector(".count-comp"),
     userField = document.querySelector(".user-field"),
     compField = document.querySelector (".comp-field")
