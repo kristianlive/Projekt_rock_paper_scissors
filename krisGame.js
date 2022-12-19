@@ -13,7 +13,7 @@ window.addEventListener("load" , function(){
         let target = e.target
         if(target.classList.contains("field")){
             userStep = target.dataset.field
-            fields.forEach(item => item.classList.remove("active", "error"))
+            fields.forEach(function (item) {item.classList.remove("active", "error")})
             target.classList.add("active")
             choiceComp()
         }
